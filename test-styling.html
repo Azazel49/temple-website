@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Website - Styling Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Test specific styles */
+        .test-container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .test-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .status-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #4caf50;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+        .css-variable-test {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .color-swatch {
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple Navigation Test -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">🏛️ Sri Divine Temple</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="test-styling.html" class="active">Test Page</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="test-container" style="margin-top: 100px;">
+        <h1>✅ CSS Styling Test Page</h1>
+        <p>If you can see this page with proper styling, colors, and layout, then the CSS is working correctly!</p>
+
+        <!-- Status Indicator -->
+        <div class="test-section">
+            <h2>🎯 Status Check</h2>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <div>
+                    <strong>CSS Loading:</strong> <span style="color: #4caf50;">✓ Working</span>
+                </div>
+            </div>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <div>
+                    <strong>CSS Variables:</strong> <span style="color: #4caf50;">✓ Working</span>
+                </div>
+            </div>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <div>
+                    <strong>Responsive Design:</strong> <span style="color: #4caf50;">✓ Working</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CSS Variables Test -->
+        <div class="test-section">
+            <h2>🎨 Color Palette Test</h2>
+            <div class="css-variable-test">
+                <div class="color-swatch" style="background: var(--primary-color);">
+                    Primary<br>#ff6b35
+                </div>
+                <div class="color-swatch" style="background: var(--secondary-color);">
+                    Secondary<br>#d4af37
+                </div>
+                <div class="color-swatch" style="background: var(--accent-saffron);">
+                    Saffron<br>#ff9933
+                </div>
+                <div class="color-swatch" style="background: var(--bg-dark);">
+                    Dark BG<br>#0f0f1a
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Styles Test -->
+        <div class="test-section">
+            <h2>🔘 Button Styles</h2>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0;">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-outline">Outline Button</button>
+                <button class="btn btn-small">Small Button</button>
+                <button class="btn btn-large">Large Button</button>
+            </div>
+        </div>
+
+        <!-- Card Styles Test -->
+        <div class="test-section">
+            <h2>📦 Card Styles</h2>
+            <div class="links-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div class="link-card">
+                    <div class="link-icon" style="font-size: 2rem;">🙏</div>
+                    <h3 style="font-size: 1.125rem;">Test Card 1</h3>
+                    <p style="font-size: 0.875rem;">This tests the card styling with shadows and hover effects.</p>
+                </div>
+                <div class="link-card">
+                    <div class="link-icon" style="font-size: 2rem;">✨</div>
+                    <h3 style="font-size: 1.125rem;">Test Card 2</h3>
+                    <p style="font-size: 0.875rem;">Cards should have smooth hover animations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animation Test -->
+        <div class="test-section">
+            <h2>🎬 Animation Test</h2>
+            <div style="display: flex; gap: 2rem; align-items: center; margin: 2rem 0;">
+                <div class="loading-spinner"></div>
+                <div>
+                    <p><strong>Spinner Animation:</strong> Should be rotating continuously</p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 2rem; align-items: center; margin: 2rem 0;">
+                <div style="font-size: 3rem; animation: float 3s ease-in-out infinite;">🪷</div>
+                <div>
+                    <p><strong>Float Animation:</strong> Should be floating up and down</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="test-section" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white;">
+            <h2 style="color: white;">📖 Next Steps</h2>
+            <ol style="color: rgba(255,255,255,0.9); line-height: 1.8;">
+                <li><strong>Open index.html:</strong> Go to <a href="index.html" style="color: var(--secondary-color); text-decoration: underline;">http://localhost:8000/index.html</a></li>
+                <li><strong>Clear browser cache:</strong> Press Ctrl+Shift+R (or Cmd+Shift+R on Mac)</li>
+                <li><strong>Check browser console:</strong> Press F12 and check for any errors</li>
+                <li><strong>Test all pages:</strong> Navigate through the website to see all features</li>
+            </ol>
+        </div>
+
+        <!-- Footer Test -->
+        <footer class="footer" style="margin-top: 3rem;">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3>🏛️ Sri Divine Temple</h3>
+                        <p>Experience divine blessings and spiritual harmony</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="test-styling.html">Test Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Sri Divine Temple. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
