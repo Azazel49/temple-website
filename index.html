@@ -4,106 +4,254 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Experience divine blessings at our sacred temple. Darshan scheduling, puja bookings, and online donations available.">
-    <meta name="keywords" content="temple, darshan, puja, donations, offerings, Indian temple">
+    <meta name="keywords" content="temple, darshan, puja, donations, offerings, Indian temple, Hindu temple, Shiva temple">
     <meta name="author" content="Temple Management">
-    <title>Sri Divine Temple - Home</title>
+    <title>श्री दिव्य मंदिर - Sri Divine Temple</title>
     
     <!-- Security Headers -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23d4af37'>🏛️</text></svg>">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🕉️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Sacred Symbol Divider -->
+    <div class="sacred-divider">
+        <span class="om-symbol">🕉️</span>
+        <div class="divider-line"></div>
+        <span class="om-symbol">🕉️</span>
+        <div class="divider-line"></div>
+        <span class="om-symbol">🕉️</span>
+    </div>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a href="index.html" class="logo">🏛️ Sri Divine Temple</a>
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🛕</span>
+                    <span class="logo-text">
+                        <span class="hindi">श्री दिव्य मंदिर</span>
+                        <span class="english">Sri Divine Temple</span>
+                    </span>
+                </a>
             </div>
-            <button class="menu-toggle" id="menuToggle">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/darshan.html">Darshan</a></li>
-                <li><a href="pages/events.html">Events</a></li>
-                <li><a href="pages/donate.html">Donate</a></li>
-                <li><a href="pages/newsletter.html">Newsletter</a></li>
+                <li><a href="index.html" class="active">🏠 Home | मुखपृष्ठ</a></li>
+                <li><a href="pages/about.html">📿 About | परिचय</a></li>
+                <li><a href="pages/darshan.html">🙏 Darshan | दर्शन</a></li>
+                <li><a href="pages/events.html">📅 Events | कार्यक्रम</a></li>
+                <li><a href="pages/donate.html">💝 Donate | दान</a></li>
+                <li><a href="pages/newsletter.html">📧 Newsletter | समाचार</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section with Mantra -->
+    <section class="hero" id="hero">
+        <!-- Floating Om Symbols -->
+        <div class="floating-oms">
+            <span class="floating-om" style="top: 10%; left: 10%;">ॐ</span>
+            <span class="floating-om" style="top: 20%; right: 15%;">ॐ</span>
+            <span class="floating-om" style="top: 60%; left: 5%;">ॐ</span>
+            <span class="floating-om" style="top: 70%; right: 10%;">ॐ</span>
+            <span class="floating-om" style="top: 85%; left: 20%;">ॐ</span>
+        </div>
+
         <div class="hero-content">
-            <h1>Welcome to Sri Divine Temple</h1>
-            <p>Experience the Divine Blessings and Spiritual Harmony</p>
+            <!-- Sacred Mantra -->
+            <div class="sanskrit-mantra">
+                <p class="mantra-sanskrit">ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् |<br>
+                उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ||</p>
+                <p class="mantra-meaning">We worship the three-eyed Lord Shiva who nourishes and spreads fragrance in our lives. May He free us from the bondage of death, just as a cucumber is severed from its vine, for the sake of immortality.</p>
+            </div>
+
+            <h1>
+                <span class="hindi">श्री दिव्य मंदिर में आपका हार्दिक स्वागत है</span>
+                <span class="english">Welcome to Sri Divine Temple</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                <span class="hindi">दिव्य आशीर्वाद और आध्यात्मिक शांति का अनुभव करें</span>
+                <span class="english">Experience the Divine Blessings and Spiritual Harmony</span>
+            </p>
+
+            <!-- Divine Symbols -->
+            <div class="divine-symbols">
+                <span class="symbol" title="Trishul">🔱</span>
+                <span class="symbol" title="Om">🕉️</span>
+                <span class="symbol" title="Swastik">🕸️</span>
+                <span class="symbol" title="Kalash">🏺</span>
+                <span class="symbol" title="Diya">🪔</span>
+            </div>
+
             <div class="hero-buttons">
-                <a href="pages/darshan.html" class="btn btn-primary">Book Darshan</a>
-                <a href="pages/donate.html" class="btn btn-secondary">Make an Offering</a>
+                <a href="pages/darshan.html" class="btn btn-primary">
+                    <span class="btn-icon">🙏</span>
+                    <span>Book Darshan | दर्शन बुक करें</span>
+                </a>
+                <a href="pages/donate.html" class="btn btn-secondary">
+                    <span class="btn-icon">🪔</span>
+                    <span>Make an Offering | दान करें</span>
+                </a>
             </div>
         </div>
         <div class="hero-overlay"></div>
     </section>
 
-    <!-- Quick Links Section -->
-    <section class="quick-links">
+    <!-- Daily Mantra Section -->
+    <section class="daily-mantra">
         <div class="container">
-            <h2>Our Services</h2>
+            <div class="mantra-card">
+                <div class="mantra-header">
+                    <span class="deity-icon">🛕</span>
+                    <h3>
+                        <span class="hindi">दैनिक मंत्र</span>
+                        <span class="english">Daily Mantra</span>
+                    </h3>
+                </div>
+                <div class="mantra-content">
+                    <p class="sanskrit">ॐ नमः शिवाय</p>
+                    <p class="hindi">ॐ नमः शिवाय - मैं भगवान शिव को नमन करता हूँ</p>
+                    <p class="english">Om Namah Shivaya - I bow to Lord Shiva</p>
+                </div>
+                <div class="mantra-footer">
+                    <span class="badge">📿 चिंतन करें | Chant 108 times</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links" id="services">
+        <div class="container">
+            <h2>
+                <span class="hindi">हमारी सेवाएं</span>
+                <span class="english">Our Services</span>
+            </h2>
+            <div class="section-divider">
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+            </div>
             <div class="links-grid">
                 <div class="link-card">
                     <div class="link-icon">🙏</div>
-                    <h3>Darshan Booking</h3>
-                    <p>Schedule your divine visit and experience sacred blessings</p>
-                    <a href="pages/darshan.html" class="link-btn">Book Now</a>
+                    <h3>
+                        <span class="hindi">दर्शन बुकिंग</span>
+                        <span class="english">Darshan Booking</span>
+                    </h3>
+                    <p class="hindi">अपनी दिव्य यात्रा निर्धारित करें और पवित्र आशीर्वाद का अनुभव करें</p>
+                    <p class="english">Schedule your divine visit and experience sacred blessings</p>
+                    <a href="pages/darshan.html" class="link-btn">Book Now | अभी बुक करें →</a>
                 </div>
                 <div class="link-card">
-                    <div class="link-icon">📅</div>
-                    <h3>Puja Events</h3>
-                    <p>Register for special pujas and ceremonies throughout the year</p>
-                    <a href="pages/events.html" class="link-btn">View Events</a>
+                    <div class="link-icon">📿</div>
+                    <h3>
+                        <span class="hindi">पूजा कार्यक्रम</span>
+                        <span class="english">Puja Events</span>
+                    </h3>
+                    <p class="hindi">पूरे वर्ष विशेष पूजा और अनुष्ठानों के लिए पंजीकरण करें</p>
+                    <p class="english">Register for special pujas and ceremonies throughout the year</p>
+                    <a href="pages/events.html" class="link-btn">View Events | कार्यक्रम देखें →</a>
                 </div>
                 <div class="link-card">
-                    <div class="link-icon">💝</div>
-                    <h3>Donations</h3>
-                    <p>Contribute to the temple maintenance and charitable activities</p>
-                    <a href="pages/donate.html" class="link-btn">Donate Now</a>
+                    <div class="link-icon">🪔</div>
+                    <h3>
+                        <span class="hindi">दान-पुण्य</span>
+                        <span class="english">Donations</span>
+                    </h3>
+                    <p class="hindi">मंदिर के रखरखाव और धर्मार्थ गतिविधियों में योगदान दें</p>
+                    <p class="english">Contribute to the temple maintenance and charitable activities</p>
+                    <a href="pages/donate.html" class="link-btn">Donate Now | दान करें →</a>
                 </div>
                 <div class="link-card">
                     <div class="link-icon">📧</div>
-                    <h3>Newsletter</h3>
-                    <p>Stay updated with temple news, events, and announcements</p>
-                    <a href="pages/newsletter.html" class="link-btn">Subscribe</a>
+                    <h3>
+                        <span class="hindi">समाचार पत्र</span>
+                        <span class="english">Newsletter</span>
+                    </h3>
+                    <p class="hindi">मंदिर समाचार, कार्यक्रमों और घोषणाओं के लिए सदस्यता लें</p>
+                    <p class="english">Subscribe for temple news, events, and announcements</p>
+                    <a href="pages/newsletter.html" class="link-btn">Subscribe | सदस्यता लें →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Temple Information Section -->
-    <section class="temple-info">
+    <section class="temple-info" id="about">
         <div class="container">
             <div class="info-grid">
                 <div class="info-column">
-                    <h2>About Our Temple</h2>
-                    <p>Sri Divine Temple, established in 1952, is one of the most revered temples in the region. The temple is dedicated to Lord Shiva and attracts thousands of devotees from across the country.</p>
-                    <p>With its magnificent architecture and spiritual atmosphere, the temple provides a sanctuary for seekers of divine grace and spiritual enlightenment.</p>
-                    <p>Our mission is to preserve ancient traditions while embracing modern convenience through our online services.</p>
-                    <a href="pages/about.html" class="btn btn-small">Learn More</a>
+                    <h2>
+                        <span class="hindi">हमारे मंदिर के बारे में</span>
+                        <span class="english">About Our Temple</span>
+                    </h2>
+                    <div class="section-divider left">
+                        <span class="divider-symbol">🕉️</span>
+                        <div class="divider-line"></div>
+                    </div>
+                    <p class="hindi">श्री दिव्य मंदिर, 1952 में स्थापित, क्षेत्र के सबसे पूजनीय मंदिरों में से एक है। यह मंदिर भगवान शिव को समर्पित है और पूरे देश से हजारों भक्तों को आकर्षित करता है।</p>
+                    <p class="english">Sri Divine Temple, established in 1952, is one of the most revered temples in the region. The temple is dedicated to Lord Shiva and attracts thousands of devotees from across the country.</p>
+                    
+                    <p class="hindi">अपनी भव्य वास्तुकला और आध्यात्मिक वातावरण के साथ, मंदिर दिव्य कृपा और आध्यात्मिक ज्ञान के चाहकों के लिए एक पवित्र स्थान प्रदान करता है।</p>
+                    <p class="english">With its magnificent architecture and spiritual atmosphere, the temple provides a sanctuary for seekers of divine grace and spiritual enlightenment.</p>
+                    
+                    <p class="hindi">हमारा मिशन प्राचीन परंपराओं को संरक्षित करते हुए ऑनलाइन सेवाओं के माध्यम से आधुनिक सुविधा को अपनाना है।</p>
+                    <p class="english">Our mission is to preserve ancient traditions while embracing modern convenience through our online services.</p>
+                    
+                    <div class="temple-features">
+                        <div class="feature">
+                            <span class="feature-icon">🛕</span>
+                            <span class="feature-text">
+                                <strong>प्राचीन वास्तुकला | Ancient Architecture</strong>
+                            </span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🔔</span>
+                            <span class="feature-text">
+                                <strong>दैनिक पूजा | Daily Worship</strong>
+                            </span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📿</span>
+                            <span class="feature-text">
+                                <strong>आध्यात्मिक कार्यक्रम | Spiritual Programs</strong>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <a href="pages/about.html" class="btn btn-primary">
+                        <span>Learn More | और जानें</span>
+                    </a>
                 </div>
                 <div class="info-column">
                     <div class="temple-image-placeholder">
                         <div class="image-placeholder">
-                            <span>🏛️</span>
-                            <p>Temple Image</p>
+                            <div class="deity-frame">
+                                <span class="deity-emoji">🛕</span>
+                                <div class="frame-ornament">⚜️</div>
+                            </div>
+                            <p class="hindi">मंदिर दर्शन</p>
+                            <p class="english">Temple View</p>
                         </div>
                     </div>
                 </div>
@@ -111,109 +259,321 @@
         </div>
     </section>
 
-    <!-- Timings Section -->
-    <section class="timings">
+    <!-- Deity Section -->
+    <section class="deity-section">
         <div class="container">
-            <h2>Temple Timings</h2>
+            <h2>
+                <span class="hindi">हमारे पूजनीय देवता</span>
+                <span class="english">Our Divine Deities</span>
+            </h2>
+            <div class="section-divider">
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+            </div>
+            <div class="deity-grid">
+                <div class="deity-card">
+                    <div class="deity-image">🛕</div>
+                    <h3>
+                        <span class="hindi">भगवान शिव</span>
+                        <span class="english">Lord Shiva</span>
+                    </h3>
+                    <p class="sanskrit">ॐ नमः शिवाय</p>
+                    <p class="hindi">संहारक और पुनर्जन्म के देवता</p>
+                    <p class="english">The Destroyer and Transformer</p>
+                </div>
+                <div class="deity-card">
+                    <div class="deity-image">🐘</div>
+                    <h3>
+                        <span class="hindi">भगवान गणेश</span>
+                        <span class="english">Lord Ganesha</span>
+                    </h3>
+                    <p class="sanskrit">ॐ गं गणपतये नमः</p>
+                    <p class="hindi">सफलता और समृद्धि के देवता</p>
+                    <p class="english">The God of Success and Prosperity</p>
+                </div>
+                <div class="deity-card">
+                    <div class="deity-image">🦚</div>
+                    <h3>
+                        <span class="hindi">भगवान कार्तिकेय</span>
+                        <span class="english">Lord Murugan</span>
+                    </h3>
+                    <p class="sanskrit">ॐ शरावणभवाय नमः</p>
+                    <p class="hindi">विजय और साहस के देवता</p>
+                    <p class="english">The God of Victory and Courage</p>
+                </div>
+                <div class="deity-card">
+                    <div class="deity-image">👁️</div>
+                    <h3>
+                        <span class="hindi">माता पार्वती</span>
+                        <span class="english">Goddess Parvati</span>
+                    </h3>
+                    <p class="sanskrit">ॐ श्री पार्वत्यै नमः</p>
+                    <p class="hindi">शक्ति और भक्ति की देवी</p>
+                    <p class="english">The Goddess of Power and Devotion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timings Section -->
+    <section class="timings" id="timings">
+        <div class="container">
+            <h2>
+                <span class="hindi">मंदिर का समय</span>
+                <span class="english">Temple Timings</span>
+            </h2>
+            <div class="section-divider light">
+                <span class="divider-symbol">🪔</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪔</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪔</span>
+            </div>
             <div class="timings-grid">
                 <div class="timing-card">
-                    <h3>Morning Aarti</h3>
+                    <div class="timing-icon">🌅</div>
+                    <h3>
+                        <span class="hindi">सुबह आरती</span>
+                        <span class="english">Morning Aarti</span>
+                    </h3>
                     <p class="time">5:30 AM - 7:00 AM</p>
-                    <p>Experience the peaceful morning prayers and blessings</p>
+                    <p class="hindi">शांतिपूर्ण सुबह की प्रार्थना और आशीर्वाद का अनुभव करें</p>
+                    <p class="english">Experience the peaceful morning prayers and blessings</p>
                 </div>
-                <div class="timing-card">
-                    <h3>Darshan Hours</h3>
+                <div class="timing-card open">
+                    <div class="timing-icon">🙏</div>
+                    <h3>
+                        <span class="hindi">दर्शन का समय</span>
+                        <span class="english">Darshan Hours</span>
+                    </h3>
                     <p class="time">7:00 AM - 12:00 PM</p>
-                    <p>General darshan time for all devotees</p>
+                    <p class="hindi">सभी भक्तों के लिए सामान्य दर्शन समय</p>
+                    <p class="english">General darshan time for all devotees</p>
+                    <span class="live-status">🟢 अभी खुला है | Open Now</span>
                 </div>
                 <div class="timing-card">
-                    <h3>Evening Aarti</h3>
+                    <div class="timing-icon">🌙</div>
+                    <h3>
+                        <span class="hindi">शाम आरती</span>
+                        <span class="english">Evening Aarti</span>
+                    </h3>
                     <p class="time">6:00 PM - 7:30 PM</p>
-                    <p>Evening prayers with special rituals and ceremonies</p>
+                    <p class="hindi">विशेष अनुष्ठानों और समारोहों के साथ शाम की प्रार्थना</p>
+                    <p class="english">Evening prayers with special rituals and ceremonies</p>
                 </div>
                 <div class="timing-card">
-                    <h3>Closure</h3>
+                    <div class="timing-icon">🔒</div>
+                    <h3>
+                        <span class="hindi">मंदिर बंद</h3>
+                        <span class="english">Closure</span>
+                    </h3>
                     <p class="time">12:00 AM - 5:00 AM</p>
-                    <p>Temple is closed for maintenance and rituals</p>
+                    <p class="hindi">रखरखाव और अनुष्ठानों के लिए मंदिर बंद</p>
+                    <p class="english">Temple is closed for maintenance and rituals</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Upcoming Events Section -->
-    <section class="upcoming-events">
+    <section class="upcoming-events" id="events">
         <div class="container">
-            <h2>Upcoming Events</h2>
+            <h2>
+                <span class="hindi">आगामी कार्यक्रम</span>
+                <span class="english">Upcoming Events</span>
+            </h2>
+            <div class="section-divider">
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+            </div>
             <div class="events-grid">
                 <div class="event-card">
                     <div class="event-date">
                         <span class="day">15</span>
-                        <span class="month">May</span>
+                        <span class="month">May | मई</span>
                     </div>
                     <div class="event-details">
-                        <h3>Rudra Abhisheka</h3>
-                        <p>Special water ritual for Lord Shiva with sacred chanting</p>
-                        <a href="pages/events.html" class="event-link">Learn More →</a>
+                        <h3>
+                            <span class="hindi">रुद्राभिषेक</span>
+                            <span class="english">Rudra Abhisheka</span>
+                        </h3>
+                        <p class="hindi">पवित्र मंत्रोच्चार के साथ भगवान शिव के लिए विशेष जल अभिषेक</p>
+                        <p class="english">Special water ritual for Lord Shiva with sacred chanting</p>
+                        <div class="event-meta">
+                            <span class="badge">🕐 6:00 AM</span>
+                            <span class="badge">📿 शिव मंत्र</span>
+                        </div>
+                        <a href="pages/events.html" class="event-link">Learn More | और जानें →</a>
                     </div>
                 </div>
                 <div class="event-card">
                     <div class="event-date">
                         <span class="day">22</span>
-                        <span class="month">May</span>
+                        <span class="month">May | मई</span>
                     </div>
                     <div class="event-details">
-                        <h3>Maha Puja</h3>
-                        <p>Grand ceremonial ritual celebrated with full devotion</p>
-                        <a href="pages/events.html" class="event-link">Learn More →</a>
+                        <h3>
+                            <span class="hindi">महा पूजा</span>
+                            <span class="english">Maha Puja</span>
+                        </h3>
+                        <p class="hindi">पूर्ण भक्ति के साथ मनाया जाने वाला भव्य अनुष्ठानिक समारोह</p>
+                        <p class="english">Grand ceremonial ritual celebrated with full devotion</p>
+                        <div class="event-meta">
+                            <span class="badge">🕐 8:00 AM</span>
+                            <span class="badge">📿 वेद मंत्र</span>
+                        </div>
+                        <a href="pages/events.html" class="event-link">Learn More | और जानें →</a>
                     </div>
                 </div>
                 <div class="event-card">
                     <div class="event-date">
                         <span class="day">28</span>
-                        <span class="month">May</span>
+                        <span class="month">May | मई</span>
                     </div>
                     <div class="event-details">
-                        <h3>Ekadashi Vrata</h3>
-                        <p>Sacred fasting and prayer ritual for spiritual purification</p>
-                        <a href="pages/events.html" class="event-link">Learn More →</a>
+                        <h3>
+                            <span class="hindi">एकादशी व्रत</span>
+                            <span class="english">Ekadashi Vrata</span>
+                        </h3>
+                        <p class="hindi">आध्यात्मिक शुद्धि के लिए पवित्र उपवास और प्रार्थना अनुष्ठान</p>
+                        <p class="english">Sacred fasting and prayer ritual for spiritual purification</p>
+                        <div class="event-meta">
+                            <span class="badge">🕐 All Day</span>
+                            <span class="badge">📿 विष्णु मंत्र</span>
+                        </div>
+                        <a href="pages/events.html" class="event-link">Learn More | और जानें →</a>
                     </div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="pages/events.html" class="btn btn-primary">View All Events</a>
+                <a href="pages/events.html" class="btn btn-primary">
+                    <span>View All Events | सभी कार्यक्रम देखें</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2>
+                <span class="hindi">मंदिर गैलरी</span>
+                <span class="english">Temple Gallery</span>
+            </h2>
+            <div class="section-divider">
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="gallery-icon">🛕</span>
+                        <span class="gallery-label">
+                            <span class="hindi">मुख्य मंदिर</span>
+                            <span class="english">Main Temple</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="gallery-icon">🪔</span>
+                        <span class="gallery-label">
+                            <span class="hindi">आरती</span>
+                            <span class="english">Evening Aarti</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="gallery-icon">📿</span>
+                        <span class="gallery-label">
+                            <span class="hindi">पूजा</span>
+                            <span class="english">Puja Ceremony</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="gallery-icon">🎆</span>
+                        <span class="gallery-label">
+                            <span class="hindi">त्योहार</span>
+                            <span class="english">Festival Celebration</span>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2>Devotee Testimonials</h2>
+            <h2>
+                <span class="hindi">भक्तों के अनुभव</span>
+                <span class="english">Devotee Testimonials</span>
+            </h2>
+            <div class="section-divider">
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+                <div class="divider-line"></div>
+                <span class="divider-symbol">🪷</span>
+            </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"The spiritual experience at this temple is truly transformative. The online darshan booking made it so convenient for us."</p>
+                    <p class="hindi">"इस मंदिर का आध्यात्मिक अनुभव वास्तव में परिवर्तनकारी है। ऑनलाइन दर्शन बुकिंग ने हमारे लिए इसे बहुत सुविधाजनक बना दिया।"</p>
+                    <p class="english">"The spiritual experience at this temple is truly transformative. The online darshan booking made it so convenient for us."</p>
                     <div class="testimonial-author">
-                        <strong>Rajesh Kumar</strong>
-                        <span>Delhi</span>
+                        <strong>राजेश कुमार | Rajesh Kumar</strong>
+                        <span>दिल्ली | Delhi</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Amazing temple with excellent facilities. The staff is very welcoming and the atmosphere is deeply spiritual and peaceful."</p>
+                    <p class="hindi">"उत्कृष्ट सुविधाओं वाला अद्भुत मंदिर। कर्मचारी बहुत स्वागतयोग्य हैं और वातावरण गहरा आध्यात्मिक और शांतिपूर्ण है।"</p>
+                    <p class="english">"Amazing temple with excellent facilities. The staff is very welcoming and the atmosphere is deeply spiritual and peaceful."</p>
                     <div class="testimonial-author">
-                        <strong>Priya Sharma</strong>
-                        <span>Mumbai</span>
+                        <strong>प्रिया शर्मा | Priya Sharma</strong>
+                        <span>मुंबई | Mumbai</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"The online donation system is seamless and transparent. I feel blessed to contribute to this divine place."</p>
+                    <p class="hindi">"ऑनलाइन दान प्रणाली निर्बाध और पारदर्शी है। मुझे इस दिव्य स्थान में योगदान देकर धन्य महसूस होता है।"</p>
+                    <p class="english">"The online donation system is seamless and transparent. I feel blessed to contribute to this divine place."</p>
                     <div class="testimonial-author">
-                        <strong>Anita Patel</strong>
-                        <span>Bangalore</span>
+                        <strong>अनिता पटेल | Anita Patel</strong>
+                        <span>बेंगलुरु | Bangalore</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Request Section -->
+    <section class="prayer-section">
+        <div class="container">
+            <div class="prayer-card">
+                <div class="prayer-icon">🙏</div>
+                <h2>
+                    <span class="hindi">प्रार्थना अनुरोध</span>
+                    <span class="english">Prayer Request</span>
+                </h2>
+                <p class="hindi">अपनी प्रार्थनाएं और इच्छाएं मंदिर में समर्पित करें। हमारे पुजारी आपकी प्रार्थनाओं के साथ विशेष पूजा करेंगे।</p>
+                <p class="english">Submit your prayers and wishes at the temple. Our priests will perform special puja with your prayers.</p>
+                <a href="pages/darshan.html" class="btn btn-secondary">
+                    <span>Submit Prayer | प्रार्थना भेजें</span>
+                </a>
             </div>
         </div>
     </section>
@@ -221,9 +581,18 @@
     <!-- Newsletter CTA Section -->
     <section class="newsletter-cta">
         <div class="container">
-            <h2>Stay Connected</h2>
-            <p>Subscribe to our newsletter to receive updates about events, special pujas, and temple news</p>
-            <a href="pages/newsletter.html" class="btn btn-primary">Subscribe Now</a>
+            <div class="newsletter-content">
+                <div class="newsletter-icon">📧</div>
+                <h2>
+                    <span class="hindi">जुड़े रहें</span>
+                    <span class="english">Stay Connected</span>
+                </h2>
+                <p class="hindi">कार्यक्रमों, विशेष पूजा और मंदिर समाचारों के अपडेट प्राप्त करने के लिए हमारे समाचार पत्र की सदस्यता लें</p>
+                <p class="english">Subscribe to our newsletter to receive updates about events, special pujas, and temple news</p>
+                <a href="pages/newsletter.html" class="btn btn-outline-light">
+                    <span>Subscribe Now | अभी सदस्यता लें</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -232,41 +601,70 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
-                    <h3>🏛️ Sri Divine Temple</h3>
-                    <p>Experience divine blessings and spiritual harmony</p>
+                    <h3>🛕 श्री दिव्य मंदिर</h3>
+                    <h3 class="english-footer">Sri Divine Temple</h3>
+                    <p class="hindi">दिव्य आशीर्वाद और आध्यात्मिक सामंजस्य का अनुभव करें</p>
+                    <p class="english">Experience divine blessings and spiritual harmony</p>
+                    <div class="footer-mantra">
+                        <span class="om-footer">ॐ</span>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>
+                        <span class="hindi">त्वरित लिंक</span>
+                        <span class="english">Quick Links</span>
+                    </h4>
                     <ul>
-                        <li><a href="pages/about.html">About Us</a></li>
-                        <li><a href="pages/darshan.html">Darshan</a></li>
-                        <li><a href="pages/events.html">Events</a></li>
-                        <li><a href="pages/donate.html">Donate</a></li>
+                        <li><a href="pages/about.html">📿 About Us | हमारे बारे में</a></li>
+                        <li><a href="pages/darshan.html">🙏 Darshan | दर्शन</a></li>
+                        <li><a href="pages/events.html">📅 Events | कार्यक्रम</a></li>
+                        <li><a href="pages/donate.html">🪔 Donate | दान</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
+                    <h4>
+                        <span class="hindi">संपर्क</span>
+                        <span class="english">Contact</span>
+                    </h4>
                     <ul>
+                        <li>📍 123 मंदिर मार्ग, पवित्र नगर, 201301</li>
                         <li>📍 123 Temple Street, Holy City, 201301</li>
                         <li>📞 +91-9876-543210</li>
                         <li>📧 info@sridivinetemple.com</li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Follow Us</h4>
+                    <h4>
+                        <span class="hindi">फॉलो करें</span>
+                        <span class="english">Follow Us</span>
+                    </h4>
                     <div class="social-links">
-                        <a href="#" title="Facebook">f</a>
-                        <a href="#" title="Instagram">📷</a>
-                        <a href="#" title="Twitter">𝕏</a>
-                        <a href="#" title="YouTube">▶️</a>
+                        <a href="#" title="Facebook" aria-label="Facebook">📘</a>
+                        <a href="#" title="Instagram" aria-label="Instagram">📷</a>
+                        <a href="#" title="Twitter" aria-label="Twitter">𝕏</a>
+                        <a href="#" title="YouTube" aria-label="YouTube">▶️</a>
+                        <a href="#" title="WhatsApp" aria-label="WhatsApp">📱</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Sri Divine Temple. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <div class="footer-mantra-bottom">
+                    <span>ॐ सर्वे भवन्तु सुखिनः | सर्वे सन्तु निरामयाः</span>
+                    <span class="english-mantra">May all be happy, May all be free from illness</span>
+                </div>
+                <p>&copy; 2026 श्री दिव्य मंदिर | Sri Divine Temple. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy | गोपनीयता नीति</a> | 
+                    <a href="#">Terms of Service | सेवा की शर्तें</a>
+                </p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Om Button -->
+    <a href="#hero" class="floating-om-btn" title="Go to top" aria-label="Scroll to top">
+        ॐ
+    </a>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
